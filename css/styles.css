@@ -126,7 +126,18 @@
     scroll-behavior: smooth;
   }
 }
-
+#pic1{
+  background-image: url('get_length_tpo.jpg');
+}
+.container2{
+  text-align: center;
+}
+.black{
+  background-color: black;
+}
+.wt_letter{
+  color: white;
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
