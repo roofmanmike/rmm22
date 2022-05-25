@@ -132,6 +132,10 @@
 .container2{
   text-align: center;
 }
+.container3{
+  max-height: 3000px;
+  max-width: 300px;
+}
 .black{
   background-color: black;
 }
@@ -150,7 +154,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+.roundEdge{
+  border-radius: 12px;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
