@@ -1,1 +1,1 @@
-$('body').css("background-color", "gainsboro");
+$('body').css("background-color", "darkGrey");
