@@ -140,6 +140,11 @@
   max-height: 400px;
   min-width: 300px;
 }
+.container3-1{
+  display: flex;
+  max-height: 400px;
+  min-width: 400px;
+}
 .container4{
   max-height: 400px;
   min-width: 300px;
