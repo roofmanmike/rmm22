@@ -129,6 +129,14 @@
     scroll-behavior: smooth;
   }
 }
+.form1{
+  border-style: double;
+  text-align: center;
+  border-radius: 10px;
+}
+.form1 input{
+  border-radius: 10px;
+}
 #pic1{
   background-image: url('get_length_tpo.jpg');
 }
@@ -180,6 +188,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .roundEdge{
+  background-color: lightBlue;
   border-radius: 12px;
 }
 hr {
