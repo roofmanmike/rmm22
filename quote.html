@@ -20,7 +20,7 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">RoofManMike&copy</a>
+                <a class="navbar-brand" id="nav1" href="#!">RoofManMike&copy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -40,7 +40,7 @@
                     <div class="col-lg-6">
                         <div class="text-center my-5"id="tpo1">
 
-                            <h1 class="display-5 fw-bolder text-white mb-2">Quote it,</h1>
+                            <h1 id="q1"class="display-5 fw-bolder text-white mb-2">Quote it,</h1>
                             <p class="lead text-white-50 mb-4">Lock in your quote with a core test</p>
                             <h1 class="display-5 fw-bolder text-white mb-2">Book it!</h1>
                             <p class="lead text-white-50 mb-4">Log-in to schedule your project</p>
@@ -49,7 +49,7 @@
                             <p id="rmm1" style="color:white">RoofManMike</p> <!-- display date ineOneMonth-->
                             <p class="lead text-white-50 mb-4">_______________</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#getRunoff"name="btnStart" id="btnStart">Get Started</a>
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" name="btnStart" id="btnStart">Get Started</a>
                                 <a class="btn btn-outline-light btn-lg px-4" href="insulation.html">Learn More</a>
                             </div>
 
@@ -59,8 +59,9 @@
 
                           <h1 class="display-5 fw-bolder text-white mb-2" id="quoteMessage"></h1>
                           <h3 class="display-5 fw-bolder text-white mb-2">Enter Width</h3>
-                          <p class="wt_letter">Gutters, drains and/or scuppers indicate the run-off</p>
+                          <p class="wt_letter" id="inject">Gutters, drains and/or scuppers indicate the run-off</p>
                             <p class="lead text-white-50 mb-4"><input type="text" name="getRunoff" id="getRunoff" value="" placeholder="Width"><br><br></p>
+                            <p class="lead text-white-50 mb-4"><input type="text" name="getSlope" id="getSlope" value="" placeholder="Length"><br><br></p>
 
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                                 <a class="btn btn-outline-light btn-lg px-4" id="btnGetLen">NEXT</a>

@@ -17,25 +17,37 @@ var qmess = $("#quoteMessage");
 var qmess2 = $("#quoteMessage2");
 var qmess3 = $('#quoteMessage3');
 var tpo2 = $('#tpo2');
+var get_slope = $('#getSlope');
+var runoff = $('#getRunoff');
 
+get_slope.slideUp();
 quote2.hide();
 tpo2.hide();
 
+// -----------------------
 $("#btnStart").click(function(){
-  qmess.html('<img id="icon" class="img-fluid rounded mb-4 mb-lg-0" src="gutter_blue.jpg" alt="..." />')
-  // qmess2.text("Enter width at run-off");
-  // qmess3.text('Enter Length of slope');
-  $('#footer').hide();
-  tpo1.hide();
-  tpo2.show();
-  // quote2.slideDown();
-  $("html, body").animate({ scrollTop: $("#btnGetLen").offset().top }, 500);
+  $('#q1').html('<h3>Enter WIDTH at watershed run-off</h3>');
+  $('#q1').after('<div class="d-grid gap-3 d-sm-flex justify-content-sm-center"><a class="btn btn-primary btn-lg px-4 me-sm-3" name="btnStart" id="btnStart">Get Started</a></div>');
+  $('#q1').after('<p class="lead text-white-50 mb-4"><input type="text" name="getRunoff" id="getRunoff" value="" placeholder="Width"><br><br></p>');
+  $('#q1').after('<img id="icon" class="img-fluid rounded mb-4 mb-lg-0" src="gutter_blue.jpg" alt="..." /><hr class="wt_letter">');
+  $('#q1').after('<p style="color:white">The side where water goes. If centrally drained use either side</p>');
+
+  // qmess.html('<img id="icon" class="img-fluid rounded mb-4 mb-lg-0" src="gutter_blue.jpg" alt="..." />')
+  // $('#footer').hide();
+  // tpo1.hide();
+  // tpo2.show();
+  // // quote2.slideDown()
+  $("html, body").animate({ scrollTop: $('#nav1').offset().top }, 500);
+});
+
+$("#btnGetLen").click(function(){
+  runoff.toggle();
+  get_slope.toggle();
 
 });
-$("#btnGetLen").click(function(){
-  tpo2.hide();
-});
 // --------------------
+
+
 function printStuff(){
   const xx = $('#getRunoff').val();
   passItem(xx);
