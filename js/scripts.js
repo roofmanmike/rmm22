@@ -12,13 +12,21 @@ $('#rmm1').text(dateMessage);
 }
 getTime();
 var tpo1 = $('#tpo1');
-var qmess = document.getElementById("quoteMessage");
-var qmess2 = document.getElementById("quoteMessage2");
+var quote2 = $('#quote2');
+var qmess = $("#quoteMessage");
+var qmess2 = $("#quoteMessage2");
+var qmess3 = $('#quoteMessage3');
+
+quote2.hide();
+
 
 $("#btnStart").click(function(){
-  qmess.innerHTML = "Water Shed";
-  qmess2.innerHTML = "Gutter or Drain as WIDTH";
-  tpo1.hide();
+  qmess.html('<img id="icon" class="img-fluid rounded mb-4 mb-lg-0" src="gutter_blue.jpg" alt="..." />')
+  qmess2.text("Enter width at run-off");
+  qmess3.text('Enter Length of slope');
+  tpo1.fadeOut();
+  quote2.slideDown();
+  quote2.scrollTop(0);
 });
 // --------------------
 function printStuff(){
