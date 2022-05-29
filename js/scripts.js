@@ -16,17 +16,24 @@ var quote2 = $('#quote2');
 var qmess = $("#quoteMessage");
 var qmess2 = $("#quoteMessage2");
 var qmess3 = $('#quoteMessage3');
+var tpo2 = $('#tpo2');
 
 quote2.hide();
-
+tpo2.hide();
 
 $("#btnStart").click(function(){
   qmess.html('<img id="icon" class="img-fluid rounded mb-4 mb-lg-0" src="gutter_blue.jpg" alt="..." />')
-  qmess2.text("Enter width at run-off");
-  qmess3.text('Enter Length of slope');
-  tpo1.fadeOut();
-  quote2.slideDown();
-  quote2.scrollTop(0);
+  // qmess2.text("Enter width at run-off");
+  // qmess3.text('Enter Length of slope');
+  $('#footer').hide();
+  tpo1.hide();
+  tpo2.show();
+  // quote2.slideDown();
+  $("html, body").animate({ scrollTop: $("#btnGetLen").offset().top }, 500);
+
+});
+$("#btnGetLen").click(function(){
+  tpo2.hide();
 });
 // --------------------
 function printStuff(){
