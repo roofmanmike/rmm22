@@ -27,10 +27,10 @@ tpo2.hide();
 // -----------------------
 $("#btnStart").click(function(){
   $('#q1').html('<h3>Enter WIDTH at watershed run-off</h3>');
-  $('#q1').after('<div class="d-grid gap-3 d-sm-flex justify-content-sm-center"><a class="btn btn-primary btn-lg px-4 me-sm-3" name="btnStart" id="btnStart">Get Started</a></div>');
+  $('#q1').after('<div class="d-grid gap-3 d-sm-flex justify-content-sm-center"><a class="btn btn-primary btn-lg px-4 me-sm-3" name="btnRunOff" onclick="alert_this();" id="btnRunOff">Enter</a></div>');
   $('#q1').after('<p class="lead text-white-50 mb-4"><input type="text" name="getRunoff" id="getRunoff" value="" placeholder="Width"><br><br></p>');
   $('#q1').after('<img id="icon" class="img-fluid rounded mb-4 mb-lg-0" src="gutter_blue.jpg" alt="..." /><hr class="wt_letter">');
-  $('#q1').after('<p style="color:white">The side where water goes. If centrally drained use either side</p>');
+  $('#q1').after('<p style="color:white">The side where water goes. If centrally drained, use either side</p>');
 
   // qmess.html('<img id="icon" class="img-fluid rounded mb-4 mb-lg-0" src="gutter_blue.jpg" alt="..." />')
   // $('#footer').hide();
@@ -40,11 +40,9 @@ $("#btnStart").click(function(){
   $("html, body").animate({ scrollTop: $('#nav1').offset().top }, 500);
 });
 
-$("#btnGetLen").click(function(){
-  runoff.toggle();
-  get_slope.toggle();
-
-});
+function alert_this(){
+  printStuff();
+}
 // --------------------
 
 

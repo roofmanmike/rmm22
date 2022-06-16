@@ -146,6 +146,9 @@
 .noLine{
   text-decoration: none;
 }
+#btnBlue{
+  background-color: rgb(17, 9, 248)
+}
 .container2{
   text-align: center;
 }
@@ -163,7 +166,9 @@
   max-height: 400px;
   min-width: 300px;
 }
-
+#backPic{
+  background-image: url('automall_recover.jpg');
+}
 .black{
   background-color: black;
 }
