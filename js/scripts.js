@@ -43,9 +43,9 @@ $("#btnStart").click(function(){
 });
 $('#tpoLenDiv').hide();
 function btn2(){
-  tpo1.hide();
+  //this is where i left off???
   $('#tpoLenDiv').show();
-  
+  $('#btnRunOff').hide();
   $('#icon').hide();
   $('#btnRunoff').hide();
   $('#getRunoff').slideUp();
@@ -54,9 +54,11 @@ function btn2(){
   $('#q1').html('<h3>Enter LENGTH of slope</h3>');
   $('#q1').after('<img id="icon" class="img-fluid rounded mb-4 mb-lg-0" src="get_length_tpo.jpg" alt="..." /><hr class="wt_letter">');
   $("html, body").animate({ scrollTop: $('#nav1').offset().top }, 500);
-  $('#pmess1').before('<div class="d-grid gap-3 d-sm-flex justify-content-sm-center"><a class="btn btn-primary btn-lg px-4 me-sm-3" name="btn5" id="btn5">Enter</a></div>');
+  $('#pmess1').before('<div class="d-grid gap-3 d-sm-flex justify-content-sm-center"><a class="btn btn-primary btn-lg px-4 me-sm-3" name="btn5" id="btn5" onclick="btn5();">Enter</a></div>');
 }
-
+function btn5(){
+  alert('lol');
+}
 let fieldArray = [];
 function collectData(){
   let wide = width;
